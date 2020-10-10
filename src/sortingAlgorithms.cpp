@@ -196,6 +196,8 @@ namespace sa {
      * \param varifier Varifier
      */     
     /* Function to sort an array using merge sort*/
+    
+    /*
     void merge(int * first, int * mid, int * last) 
     { 
         int sizeArray1 = mid - first + 1; 
@@ -263,7 +265,9 @@ namespace sa {
         delete[] leftArray;
         delete[] rightArray;
     } 
+    */
 
+    /*
     void mergeSort(int first, int * last) 
     { 
         if (first < last) 
@@ -280,6 +284,7 @@ namespace sa {
             printArray(first, last);
         } 
     }
+    */
 
     /*!
      * Performs a **radix sort** for `value` in `[first;last)` and returns a pointer to the location of the first occurrence of `value` in the range `[first,last]`, or `last` if no such element is found.
@@ -289,6 +294,9 @@ namespace sa {
      * \param varifier Varifier
      */     
     /* Function to sort an array using radix sort*/
+    
+
+    /*
     value_type getMax(value_type * first, value_type * last)
     {
         value_type mx = first;
@@ -304,7 +312,9 @@ namespace sa {
 
         return mx;
     }
-    
+    */
+
+    /*
     void countSort(value_type *first, value_type * last, value_type exp)
     {
         int n = last - first;
@@ -334,7 +344,9 @@ namespace sa {
 
         delete[] output;
     }
-    
+    */
+
+    /*
     void radixSort(value_type * first, value_type * last)
     {
         // Find the maximum number to know number of digits
@@ -346,4 +358,5 @@ namespace sa {
         for (int exp = 1; m / exp > 0; exp *= 10)
             countSort(first, last, exp);
     }
+    */
 }

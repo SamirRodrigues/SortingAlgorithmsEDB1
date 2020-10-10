@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/generic.h
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/include/generic.h
 
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/sorting.h
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/include/sorting.h
 
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/genericFunctions.cpp
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/genericFunctions.cpp
 iostream
 -
 
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/main.cpp
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/main.cpp
 iostream
 -
 chrono
@@ -23,12 +23,20 @@ fstream
 -
 iterator
 -
+cstdlib
+-
+ctime
+-
+random
+-
+algorithm
+-
 ../include/sorting.h
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/sorting.h
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/include/sorting.h
 ../include/generic.h
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/generic.h
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/include/generic.h
 
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/sortingAlgorithms.cpp
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/sortingAlgorithms.cpp
 iostream
 -
 iterator
@@ -36,7 +44,7 @@ iterator
 array
 -
 ../include/sorting.h
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/sorting.h
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/include/sorting.h
 ../include/generic.h
-/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/generic.h
+/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/include/generic.h
 

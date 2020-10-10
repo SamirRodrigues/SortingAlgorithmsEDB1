@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms
+CMAKE_SOURCE_DIR = /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build
+CMAKE_BINARY_DIR = /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sorting.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/sorting.dir/flags.make
 
 CMakeFiles/sorting.dir/src/main.cpp.o: CMakeFiles/sorting.dir/flags.make
 CMakeFiles/sorting.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sorting.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting.dir/src/main.cpp.o -c /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sorting.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting.dir/src/main.cpp.o -c /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/main.cpp
 
 CMakeFiles/sorting.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sorting.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/main.cpp > CMakeFiles/sorting.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/main.cpp > CMakeFiles/sorting.dir/src/main.cpp.i
 
 CMakeFiles/sorting.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sorting.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/main.cpp -o CMakeFiles/sorting.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/main.cpp -o CMakeFiles/sorting.dir/src/main.cpp.s
 
 CMakeFiles/sorting.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/sorting.dir/src/main.cpp.o.provides.build: CMakeFiles/sorting.dir/src
 
 CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o: CMakeFiles/sorting.dir/flags.make
 CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o: ../src/sortingAlgorithms.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o -c /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/sortingAlgorithms.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o -c /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/sortingAlgorithms.cpp
 
 CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/sortingAlgorithms.cpp > CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/sortingAlgorithms.cpp > CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.i
 
 CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/sortingAlgorithms.cpp -o CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/sortingAlgorithms.cpp -o CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.s
 
 CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o.provides.build: CMakeFiles/so
 
 CMakeFiles/sorting.dir/src/genericFunctions.cpp.o: CMakeFiles/sorting.dir/flags.make
 CMakeFiles/sorting.dir/src/genericFunctions.cpp.o: ../src/genericFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sorting.dir/src/genericFunctions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting.dir/src/genericFunctions.cpp.o -c /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/genericFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sorting.dir/src/genericFunctions.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sorting.dir/src/genericFunctions.cpp.o -c /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/genericFunctions.cpp
 
 CMakeFiles/sorting.dir/src/genericFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sorting.dir/src/genericFunctions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/genericFunctions.cpp > CMakeFiles/sorting.dir/src/genericFunctions.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/genericFunctions.cpp > CMakeFiles/sorting.dir/src/genericFunctions.cpp.i
 
 CMakeFiles/sorting.dir/src/genericFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sorting.dir/src/genericFunctions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/genericFunctions.cpp -o CMakeFiles/sorting.dir/src/genericFunctions.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/genericFunctions.cpp -o CMakeFiles/sorting.dir/src/genericFunctions.cpp.s
 
 CMakeFiles/sorting.dir/src/genericFunctions.cpp.o.requires:
 
@@ -143,7 +143,7 @@ sorting: CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o
 sorting: CMakeFiles/sorting.dir/src/genericFunctions.cpp.o
 sorting: CMakeFiles/sorting.dir/build.make
 sorting: CMakeFiles/sorting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable sorting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable sorting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sorting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/sorting.dir/clean:
 .PHONY : CMakeFiles/sorting.dir/clean
 
 CMakeFiles/sorting.dir/depend:
-	cd /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build /mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles/sorting.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1 /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1 /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build /mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/sorting.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sorting.dir/depend
 

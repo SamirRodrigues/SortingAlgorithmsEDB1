@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include 
+CXX_INCLUDES = -I/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/include 
 

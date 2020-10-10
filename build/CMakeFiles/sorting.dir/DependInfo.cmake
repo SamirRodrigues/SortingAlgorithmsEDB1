@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/genericFunctions.cpp" "/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles/sorting.dir/src/genericFunctions.cpp.o"
-  "/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/main.cpp" "/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles/sorting.dir/src/main.cpp.o"
-  "/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/sortingAlgorithms.cpp" "/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o"
+  "/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/genericFunctions.cpp" "/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/sorting.dir/src/genericFunctions.cpp.o"
+  "/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/main.cpp" "/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/sorting.dir/src/main.cpp.o"
+  "/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/src/sortingAlgorithms.cpp" "/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

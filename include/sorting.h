@@ -1,6 +1,12 @@
 /*!
  * A simple implementation of the following algorithms for array of integers:
  *  + QuickSort
+ *  + InsectionSort
+ *  + SelectionSort
+ *  + BubbleSort
+ *  + ShellSort
+ *  + MergeSort
+ *  + RadixSort
  *
  * \author Samir Rodrigues
  * \date 09/10/2020.

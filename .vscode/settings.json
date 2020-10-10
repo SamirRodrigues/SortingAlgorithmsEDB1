@@ -41,7 +41,8 @@
         "chrono": "cpp",
         "fstream": "cpp",
         "ratio": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "ctime": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
