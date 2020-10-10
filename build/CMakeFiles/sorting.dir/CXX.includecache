@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/generic.h
+
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/sorting.h
+
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/genericFunctions.cpp
+iostream
+-
+
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/main.cpp
+iostream
+-
+chrono
+-
+fstream
+-
+iterator
+-
+../include/sorting.h
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/sorting.h
+../include/generic.h
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/generic.h
+
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/src/sortingAlgorithms.cpp
+iostream
+-
+iterator
+-
+array
+-
+../include/sorting.h
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/sorting.h
+../include/generic.h
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/include/generic.h
+

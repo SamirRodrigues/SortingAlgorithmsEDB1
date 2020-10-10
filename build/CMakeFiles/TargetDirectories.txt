@@ -1,0 +1,3 @@
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles/sorting.dir
+/mnt/c/Users/email/Desktop/2020.6/EDB/sorting-algorithms/build/CMakeFiles/edit_cache.dir
