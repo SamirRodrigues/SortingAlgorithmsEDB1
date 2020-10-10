@@ -15,9 +15,8 @@ using namespace ge;
 
 int main( void )
 {
-    std::cout << ">>> Creating a array with size 900.000.000, please WAIT.... <<<\n";
 
-    std::ofstream file ("insertionSort.dat");
+    std::ofstream file ("selectionSortRandomElem.dat");
 
     value_type incrementeValue = 40000;
     value_type baseValue = 1010000;
@@ -28,17 +27,22 @@ int main( void )
 
     int * A = NULL;
     A = new int[1010000];
-    for (size_t i = 0; i < 1010000; i++)
-    {
-        A[i] = std::rand()%1000;
-        //std::cout << A[i] << std::endl;
-    }    
+        
 
     value_type target = -1;
 
     
     for (size_t i = 0; i <= 25; i++)
     {
+
+        std::cout << ">>> Creating a array with size " << (baseValue-(incrementeValue * (times - i))) << ", please WAIT.... <<<\n";
+
+        for (size_t j = 0; j < (baseValue-(incrementeValue * (times - i))); j++)
+        {
+            A[j] = std::rand()%1000;
+            //std::cout << A[i] << std::endl;
+        }
+
         std::cout << ">>> STARTING computation that needs timing, please WAIT.... <<<\n";    
     
         auto start = std::chrono::steady_clock::now();
@@ -46,7 +50,7 @@ int main( void )
 
                         /* PUT THE CODE WHO WILL BE TESTED HERE */
 
-        insertionSort( A, A+(baseValue-(incrementeValue * (times - i))) );
+        selectionSort( A, A+(baseValue-(incrementeValue * (times - i))) );
 
         //================================================================================
         std::chrono::time_point<std::chrono::steady_clock> end = std::chrono::steady_clock::now();
