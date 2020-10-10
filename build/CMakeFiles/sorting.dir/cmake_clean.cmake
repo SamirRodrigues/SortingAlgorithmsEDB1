@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/sorting.dir/src/genericFunctions.cpp.o"
   "CMakeFiles/sorting.dir/src/main.cpp.o"
   "CMakeFiles/sorting.dir/src/sortingAlgorithms.cpp.o"
-  "CMakeFiles/sorting.dir/src/genericFunctions.cpp.o"
-  "sorting.pdb"
   "sorting"
+  "sorting.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

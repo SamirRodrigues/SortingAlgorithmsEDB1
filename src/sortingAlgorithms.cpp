@@ -197,7 +197,7 @@ namespace sa {
      */     
     /* Function to sort an array using merge sort*/
     
-    /*
+    
     void merge(int * first, int * mid, int * last) 
     { 
         int sizeArray1 = mid - first + 1; 
@@ -257,7 +257,7 @@ namespace sa {
         // R[], if there are any
         while (idxArray2 < sizeArray2) 
         { 
-            (first+idxFinalArray) = rightArray[idxArray2]; 
+            *(first+idxFinalArray) = rightArray[idxArray2]; 
             idxArray2 +=1; 
             idxFinalArray +=1; 
         }
@@ -265,10 +265,10 @@ namespace sa {
         delete[] leftArray;
         delete[] rightArray;
     } 
-    */
+    
 
-    /*
-    void mergeSort(int first, int * last) 
+    
+    void mergeSort(int * first, int * last) 
     { 
         if (first < last) 
         { 
@@ -284,7 +284,7 @@ namespace sa {
             printArray(first, last);
         } 
     }
-    */
+    
 
     /*!
      * Performs a **radix sort** for `value` in `[first;last)` and returns a pointer to the location of the first occurrence of `value` in the range `[first,last]`, or `last` if no such element is found.
@@ -299,12 +299,12 @@ namespace sa {
     /*
     value_type getMax(value_type * first, value_type * last)
     {
-        value_type mx = first;
+        value_type mx = *first;
         value_type i = 1;
 
         while (first+i < last)
         {
-            if ((first+i) > mx)
+            if (*(first+i) > mx)
                 mx = *(first+i);
 
             i++;
@@ -312,9 +312,9 @@ namespace sa {
 
         return mx;
     }
-    */
+    
 
-    /*
+    
     void countSort(value_type *first, value_type * last, value_type exp)
     {
         int n = last - first;
@@ -324,7 +324,7 @@ namespace sa {
 
         // Store count of occurrences in count[]
         for (i = 0; i < n; i++)
-            count[((first+i) / exp) % 10]++;
+            count[(*(first+i) / exp) % 10]++;
 
         // Change count[i] so that count[i] now contains actual
         //  position of this digit in output[]
@@ -344,9 +344,9 @@ namespace sa {
 
         delete[] output;
     }
-    */
+    
 
-    /*
+    
     void radixSort(value_type * first, value_type * last)
     {
         // Find the maximum number to know number of digits

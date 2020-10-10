@@ -42,7 +42,8 @@
         "fstream": "cpp",
         "ratio": "cpp",
         "array": "cpp",
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "xmemory0": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -1,3 +1,3 @@
-/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/sorting.dir
-/mnt/c/Users/email/Documents/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/build/CMakeFiles/sorting.dir
