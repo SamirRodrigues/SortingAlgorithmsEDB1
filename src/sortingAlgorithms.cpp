@@ -151,12 +151,12 @@ namespace sa {
      * \param last Pointer just past the last element of the data range.
      * \param next Pointer to the next element who gonna recieve the previous element 
      * \param varifier Varifier
-     */     
+     */ 
     /* Function to sort an array using shell sort*/
-    /*void shellSort(value_type A[], value_type size)  
+    void shellSort(value_type * first, value_type * last)  
     {          
         value_type aux, gapIdx, verifier;
-        value_type spaceGap = size/2;
+        value_type spaceGap = (last - first)/2;
 
         //aux       = recebe a o valor da variável que vai ser comparada seu par no gap, sendo ela a segunda variável dentre o par.
         //gapIdx    = define qual gap vai ser comparado, pois não se pode comparar todos os pares de uma vez.
@@ -166,19 +166,19 @@ namespace sa {
         {
             gapIdx = spaceGap;
                 
-                while ( gapIdx < size ) // Esse passo define qual gap vai ser analisado, começando a partir do mais próximo do **first** até o mais próximo do **last**.
+                while ( first+gapIdx < last ) // Esse passo define qual gap vai ser analisado, começando a partir do mais próximo do **first** até o mais próximo do **last**.
                 {                    
-                    aux         = A[gapIdx]; // Recebe o valor da SEGUNDA variável do subvetor criado a partir do gap 
+                    aux         = *(first+gapIdx); // Recebe o valor da SEGUNDA variável do subvetor criado a partir do gap 
                     verifier    = gapIdx; // Recebe o idx do par da SEGUNDA variável do gap                    
                     
                     while ( verifier >= spaceGap //Verifica se já chegou no primeiro gap 
-                            && aux < A[verifier-spaceGap] //Compara se a váriável mais a esquerda(A[verifier-spaceGap]) é maior que a mais a direita (aux)  )   // Esse passo imita o Insection Sort considerando os gaps
+                            && aux < *(first+verifier-spaceGap)) //Compara se a váriável mais a esquerda(A[verifier-spaceGap]) é maior que a mais a direita (aux)    // Esse passo imita o Insection Sort considerando os gaps
                     {
-                        A[verifier] = A[verifier-spaceGap];
+                        *(first+verifier) = *(first+verifier-spaceGap);
                         verifier    = verifier-spaceGap;
                     }   
 
-                    A[verifier] = aux;
+                    *(first+verifier) = aux;
 
                     gapIdx +=1;
                 }
@@ -186,38 +186,6 @@ namespace sa {
             spaceGap /= 2; // spaceGap = spaceGap/2;        
         }
         
-    }*/
-    
-    void shellSort(value_type * first, value_type * last)
-    {
-
-        value_type size = last - first;
-        value_type i;
-        value_type temp;
-
-        value_type half = size/2;
-
-        while(half > 0)
-        {
-            for(int rightToHalf = half; rightToHalf < size ; rightToHalf+=1)
-            {
-                
-                temp = *(first+rightToHalf);
-
-                for (i = rightToHalf; i >= half && *(first+i-half) > temp; i-=half)
-                {
-                
-                    *(first+i) = *(first+i-half);
-                
-                }
-
-                *(first+i) = temp;
-
-            }
-
-            half/=2;
-        }
-
     }
 
     /*!

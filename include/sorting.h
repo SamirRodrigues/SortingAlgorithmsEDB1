@@ -45,7 +45,7 @@ namespace sa {
 
     ///RadixSort Functions
 
-    value_type getBigger(int * first, int * last);
+    value_type getBigger(value_type * first, value_type * last);
 
     void countSort(value_type *first, value_type * last, value_type exp);
 

@@ -16,7 +16,7 @@ using namespace ge;
 int main( void )
 {
 
-    std::ofstream file ("radixSortRandomElem.dat");
+    std::ofstream file ("shellSortRandomElem.dat");
 
     value_type incrementeValue = 4000;
     value_type baseValue = 101000;
@@ -50,7 +50,7 @@ int main( void )
 
                         /* PUT THE CODE WHO WILL BE TESTED HERE */
 
-        radixSort( A, A+(baseValue-(incrementeValue * (times - i))) );
+        shellSort( A, A+(baseValue-(incrementeValue * (times - i))) );
 
         //================================================================================
         std::chrono::time_point<std::chrono::steady_clock> end = std::chrono::steady_clock::now();
