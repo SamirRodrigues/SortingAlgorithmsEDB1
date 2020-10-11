@@ -153,7 +153,7 @@ namespace sa {
      * \param varifier Varifier
      */     
     /* Function to sort an array using shell sort*/
-    void shellSort(value_type A[], value_type size)  
+    /*void shellSort(value_type A[], value_type size)  
     {          
         value_type aux, gapIdx, verifier;
         value_type spaceGap = size/2;
@@ -171,8 +171,8 @@ namespace sa {
                     aux         = A[gapIdx]; // Recebe o valor da SEGUNDA variável do subvetor criado a partir do gap 
                     verifier    = gapIdx; // Recebe o idx do par da SEGUNDA variável do gap                    
                     
-                    while ( verifier >= spaceGap /*Verifica se já chegou no primeiro gap*/ 
-                            && aux < A[verifier-spaceGap] /*Compara se a váriável mais a esquerda(A[verifier-spaceGap]) é maior que a mais a direita (aux) */ )   // Esse passo imita o Insection Sort considerando os gaps
+                    while ( verifier >= spaceGap //Verifica se já chegou no primeiro gap 
+                            && aux < A[verifier-spaceGap] //Compara se a váriável mais a esquerda(A[verifier-spaceGap]) é maior que a mais a direita (aux)  )   // Esse passo imita o Insection Sort considerando os gaps
                     {
                         A[verifier] = A[verifier-spaceGap];
                         verifier    = verifier-spaceGap;
@@ -186,6 +186,38 @@ namespace sa {
             spaceGap /= 2; // spaceGap = spaceGap/2;        
         }
         
+    }*/
+    
+    void shellSort(value_type * first, value_type * last)
+    {
+
+        value_type size = last - first;
+        value_type i;
+        value_type temp;
+
+        value_type half = size/2;
+
+        while(half > 0)
+        {
+            for(int rightToHalf = half; rightToHalf < size ; rightToHalf+=1)
+            {
+                
+                temp = *(first+rightToHalf);
+
+                for (i = rightToHalf; i >= half && *(first+i-half) > temp; i-=half)
+                {
+                
+                    *(first+i) = *(first+i-half);
+                
+                }
+
+                *(first+i) = temp;
+
+            }
+
+            half/=2;
+        }
+
     }
 
     /*!
@@ -198,22 +230,22 @@ namespace sa {
     /* Function to sort an array using merge sort*/
     
     
-    void merge(int * first, int * mid, int * last) 
+    void merge(value_type * first, value_type * mid, value_type * last) 
     { 
-        int sizeArray1 = mid - first + 1; 
-        int sizeArray2 = last - mid; 
+        value_type sizeArray1 = mid - first + 1; 
+        value_type sizeArray2 = last - mid; 
 
         // Create temp arrays
-        int * leftArray = new int[sizeArray1];
-        int * rightArray = new int[sizeArray2]; 
+        value_type * leftArray = new int[sizeArray1];
+        value_type * rightArray = new int[sizeArray2]; 
 
         // Copy data to temp arrays L[] and R[]
-        for(int i = 0; i < sizeArray1; i++) 
+        for(value_type i = 0; i < sizeArray1; i++) 
         {
             leftArray[i] = *(first+i); 
         }
 
-        for(int j = 0; j < sizeArray2; j++) 
+        for(value_type j = 0; j < sizeArray2; j++) 
         {
             rightArray[j] = *(mid+1+j); 
         }
@@ -221,13 +253,13 @@ namespace sa {
         // Merge the temp arrays back into arr[l..r] 
 
         // Initial index of first subarray 
-        int idxArray1 = 0;
+        value_type idxArray1 = 0;
 
         // Initial index of second subarray 
-        int idxArray2 = 0;
+        value_type idxArray2 = 0;
 
         // Initial index of merged subarray 
-        int idxFinalArray = 0; 
+        value_type idxFinalArray = 0; 
 
         while (idxArray1 < sizeArray1 && idxArray2 < sizeArray2) 
         { 
@@ -268,20 +300,20 @@ namespace sa {
     
 
     
-    void mergeSort(int * first, int * last) 
+    void mergeSort(value_type * first, value_type * last) 
     { 
         if (first < last) 
         { 
             // Same as (l+r)/2, but avoids
             // overflow for large l and h 
-            int * m = first + (last - first) / 2; 
+            value_type * m = first + (last - first) / 2; 
 
             // Sort first and second halves 
             mergeSort(first, m); 
             mergeSort(m+1, last); 
 
             merge(first, m, last); 
-            printArray(first, last);
+
         } 
     }
     
@@ -296,31 +328,31 @@ namespace sa {
     /* Function to sort an array using radix sort*/
     
 
-    /*
-    value_type getMax(value_type * first, value_type * last)
+    
+    value_type getBigger(value_type * first, value_type * last)
     {
-        value_type mx = *first;
+        value_type bigger = *first;
         value_type i = 1;
 
         while (first+i < last)
         {
-            if (*(first+i) > mx)
-                mx = *(first+i);
+            if (*(first+i) > bigger)
+                bigger = *(first+i);
 
             i++;
         }
 
-        return mx;
+        return bigger;
     }
     
 
     
     void countSort(value_type *first, value_type * last, value_type exp)
     {
-        int n = last - first;
+        value_type n = last - first;
 
-        int * output = new int[n]; // output array
-        int i, count[10] = { 0 };
+        value_type * output = new value_type[n]; // output array
+        value_type i, count[10] = { 0 };
 
         // Store count of occurrences in count[]
         for (i = 0; i < n; i++)
@@ -333,8 +365,8 @@ namespace sa {
 
         // Build the output array
         for (i = n - 1; i >= 0; i--) {
-            output[count[((first+i) / exp) % 10] - 1] = (first+i);
-            count[((first+i) / exp) % 10]--;
+            output[count[(*(first+i) / exp) % 10] - 1] = *(first+i);
+            count[(*(first+i) / exp) % 10]--;
         }
 
         // Copy the output array to arr[], so that arr[] now
@@ -350,13 +382,13 @@ namespace sa {
     void radixSort(value_type * first, value_type * last)
     {
         // Find the maximum number to know number of digits
-        int m = getMax(first, last);
+        value_type m = getBigger(first, last);
     
         // Do counting sort for every digit. Note that instead
         // of passing digit number, exp is passed. exp is 10^i
         // where i is current digit number
-        for (int exp = 1; m / exp > 0; exp *= 10)
+        for (value_type exp = 1; m / exp > 0; exp *= 10)
             countSort(first, last, exp);
     }
-    */
+    
 }

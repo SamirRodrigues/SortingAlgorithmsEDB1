@@ -16,17 +16,17 @@ using namespace ge;
 int main( void )
 {
 
-    std::ofstream file ("selectionSortRandomElem.dat");
+    std::ofstream file ("radixSortRandomElem.dat");
 
-    value_type incrementeValue = 40000;
-    value_type baseValue = 1010000;
+    value_type incrementeValue = 4000;
+    value_type baseValue = 101000;
 
     value_type times = 25;
 
     std::srand(std::time(0)); //use current time as seed for random generator
 
     int * A = NULL;
-    A = new int[1010000];
+    A = new int[baseValue];
         
 
     value_type target = -1;
@@ -50,7 +50,7 @@ int main( void )
 
                         /* PUT THE CODE WHO WILL BE TESTED HERE */
 
-        selectionSort( A, A+(baseValue-(incrementeValue * (times - i))) );
+        radixSort( A, A+(baseValue-(incrementeValue * (times - i))) );
 
         //================================================================================
         std::chrono::time_point<std::chrono::steady_clock> end = std::chrono::steady_clock::now();

@@ -36,16 +36,16 @@ namespace sa {
     void bubbleSort(value_type* first, value_type* last);
 
     /// ShellSort Functions
-    void shellSort(value_type A[], value_type size);
+    void shellSort(value_type* first, value_type* last);
 
     /// MergeSort Functions
-    void merge(int * first, int * mid, int * last);
+    void merge(value_type * first, value_type * mid, value_type * last);
 
-    void mergeSort(int first, int * last);
+    void mergeSort(value_type * first, value_type * last);
 
     ///RadixSort Functions
 
-    value_type getMax(int * first, int * last);
+    value_type getBigger(int * first, int * last);
 
     void countSort(value_type *first, value_type * last, value_type exp);
 

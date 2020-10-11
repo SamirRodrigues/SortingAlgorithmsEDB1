@@ -32,3 +32,15 @@ algorithm
 ../include/generic.h
 /mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/include/generic.h
 
+/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/src/sortingAlgorithms.cpp
+iostream
+-
+iterator
+-
+array
+-
+../include/sorting.h
+/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/include/sorting.h
+../include/generic.h
+/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/include/generic.h
+
