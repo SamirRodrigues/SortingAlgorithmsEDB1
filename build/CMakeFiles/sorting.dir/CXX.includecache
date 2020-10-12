@@ -10,12 +10,22 @@
 
 /mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/include/sorting.h
 
-/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/src/sortingAlgorithms.cpp
+/mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/src/main.cpp
 iostream
+-
+chrono
+-
+fstream
 -
 iterator
 -
-array
+cstdlib
+-
+ctime
+-
+random
+-
+algorithm
 -
 ../include/sorting.h
 /mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/include/sorting.h
