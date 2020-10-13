@@ -27,6 +27,10 @@ random
 -
 algorithm
 -
+string
+-
+iomanip
+-
 ../include/sorting.h
 /mnt/c/Users/italo/Desktop/Z/GitHub/SortingAlgorithmsEDB1/include/sorting.h
 ../include/generic.h
